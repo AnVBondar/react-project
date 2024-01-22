@@ -1,0 +1,107 @@
+@import "./styles/vars";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main section {
+  flex-grow: 2;
+}
+
+.btn {
+  width: 70px;
+  height: 25px;
+
+  border: 2px solid;
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__upload {
+    background-color: $btn-standard-color;
+    border-color: $btn-border-color;
+
+    color: #fff;
+    font-size: 15px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    & input {
+      display: none;
+    }
+  }
+
+  &__delete {
+    background-color: transparent;
+    color: red;
+
+    &--hiden {
+      display: none;
+    }
+  }
+
+  &__clear {
+    background-color: rgba(255, 204, 36, 0.81);
+    border-color: rgb(222, 220, 122);
+    color: rgb(255, 107, 1);
+  }
+}
+
+.people,
+.user-page {
+  padding-block: 30px;
+  padding-inline: 40px;
+}
