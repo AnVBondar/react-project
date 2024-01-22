@@ -1,0 +1,24 @@
+.nav {
+  width: 100%;
+  padding-left: 50px;
+
+  border-bottom: 2px solid rgba(0, 0, 0, .2);
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    padding: 20px 10px;
+    text-align: center;
+    transition: color .3s ease;
+
+    &:hover {
+      color: blue;
+    }
+
+    &-active {
+      background: rgba(0, 0, 0, .2);
+    }
+  }
+}
